@@ -46,10 +46,3 @@ body {
 .closebtn:hover {
   color: black;
 }
-
-html {  
-  background-image: url("https://i.pinimg.com/originals/b2/8f/f7/b28ff73520755530c07cb98cd4c20e0c.jpg");  
-  background-repeat: no-repeat;  
-  background-position: 0% 0%;
-  background-size: 100% 100%;
-}
