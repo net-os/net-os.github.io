@@ -47,6 +47,10 @@ body {
   color: black;
 }
 
-body {
-        background-image: url("https://i.pinimg.com/originals/b2/8f/f7/b28ff73520755530c07cb98cd4c20e0c.jpg");
-} 
+html { 
+  background: url(https://i.pinimg.com/originals/b2/8f/f7/b28ff73520755530c07cb98cd4c20e0c.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
