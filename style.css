@@ -4,7 +4,7 @@ body {
 }
 .topnav {
   overflow: hidden;
-  background-color: rgba(0,0,0,0.95);
+  background-color: rgba(0,0,0,0.85);
 }
 .topnav a {
   float: left;
@@ -57,7 +57,7 @@ body {
 
 .icon-bar {
   width: 100%;
-  background-color: rgba(0,0,0,0.95);
+  background-color: rgba(0,0,0,0.85);
   overflow: hidden;
   position: fixed;
    bottom: 0;
