@@ -82,7 +82,7 @@ body {
   background-color: #4CAF50;
 }
 
-html { 
+#background { 
   background: url(https://i.pinimg.com/originals/b2/8f/f7/b28ff73520755530c07cb98cd4c20e0c.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
