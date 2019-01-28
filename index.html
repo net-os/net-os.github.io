@@ -135,40 +135,35 @@ function checkTime(i) {
 <div class="topnav">
   <a href="#home">File</a>
   <a href="#news">Edit</a>
-  <a href="#contact" onclick="myFunction()">View</a>
+  <a href="#contact" onclick="openFullscreen();">View</a>
   <a id="clock" style="position: absolute;
   right: 0;" href="#name">0/0/0   <b>00:00</b></a>
 </div>
 
   <script>
-function myFunction() {
- var elem = document.documentElement;
-
-/* View in fullscreen */
+var elem = document.documentElement;
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
     elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
     elem.webkitRequestFullscreen();
   } else if (elem.msRequestFullscreen) { /* IE/Edge */
     elem.msRequestFullscreen();
   }
 }
 
-/* Close fullscreen */
 function closeFullscreen() {
   if (document.exitFullscreen) {
     document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) { /* Firefox */
+  } else if (document.mozCancelFullScreen) {
     document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+  } else if (document.webkitExitFullscreen) {
     document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE/Edge */
+  } else if (document.msExitFullscreen) {
     document.msExitFullscreen();
   }
-} 
 }
 </script>
   
