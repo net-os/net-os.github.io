@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -133,12 +132,8 @@ function checkTime(i) {
   </head>
 <body onload="startTime()">
 
-  <style>
-.name { white-space: nowrap }
-</style>
-  
 <div class="topnav">
-  <a class="name" onclick="myFunction()" style="font-family: Arial, Helvetica, sans-serif;"><i class="fas fa-user"></a>
+  <a id="user" onclick="myFunction()" style="font-family: Arial, Helvetica, sans-serif;"><i class="fas fa-user"></i></a>
   <a id="clock" style="position: absolute;
   right: 0;" href="#name">0/0/0   <b>00:00</b></a>
 </div>
@@ -150,7 +145,7 @@ function myFunction() {
   if (person == null || person == "") {
     txt = "User cancelled the prompt.";
   } else {
-    txt = "<i class='fas fa-user'></i>   " + person;
+    txt = "<i class='fas fa-user'>   " + "" + person + "";
   }
   document.getElementById("user").innerHTML = txt;
 }
