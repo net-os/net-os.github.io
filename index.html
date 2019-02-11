@@ -138,7 +138,7 @@ function checkTime(i) {
 </style>
   
 <div class="topnav">
-  <a class="name" onclick="myFunction()" style="font-family: Arial, Helvetica, sans-serif;"><i class="fas fa-user"></i><p id=user></p></a>
+  <a class="name" onclick="myFunction()" style="font-family: Arial, Helvetica, sans-serif;"><i class="fas fa-user"></a>
   <a id="clock" style="position: absolute;
   right: 0;" href="#name">0/0/0   <b>00:00</b></a>
 </div>
@@ -150,7 +150,7 @@ function myFunction() {
   if (person == null || person == "") {
     txt = "User cancelled the prompt.";
   } else {
-    txt = "  " + person;
+    txt = "<i class="fas fa-user"></i>   " + person;
   }
   document.getElementById("user").innerHTML = txt;
 }
