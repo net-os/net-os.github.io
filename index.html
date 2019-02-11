@@ -133,37 +133,21 @@ function checkTime(i) {
 <body onload="startTime()">
 
 <div class="topnav">
-  <a href="#home">File</a>
-  <a href="#news">Edit</a>
-  <a href="#contact" onclick="openFullscreen();">View</a>
+  <a id="user" href="#contact" onclick="myFunction();"><i class="fas fa-user"></i></a>
   <a id="clock" style="position: absolute;
   right: 0;" href="#name">0/0/0   <b>00:00</b></a>
 </div>
 
   <script>
-var elem = document.documentElement;
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "";
+  } else {
+    txt = "<i class="fas fa-user"></i> " + person;
   }
-}
-
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) {
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) {
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) {
-    document.msExitFullscreen();
-  }
+  document.getElementById("user").innerHTML = txt;
 }
 </script>
   
