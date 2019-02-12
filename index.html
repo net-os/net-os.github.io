@@ -6,142 +6,12 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <title>Net OS</title>
-<style>
-  body {
-  margin: 0;
-  font-family: Arial;
-}
-.topnav {
-  width: 100%;
-  background-color: rgba(0,0,0,0.75);
-  overflow: hidden;
-  position: fixed;
-   top: 0;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 19px;
-}
-  .topnav img {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px 5px;
-  text-decoration: none;
-  font-size: 19px;
-}
-.topnav a:hover {
-  background-color: #000;
-}
-  .topnav img:hover {
-  background-color: #000;
-  color: black;
-}
-.topnav a.active {
-  background-color: #ff1919;
-  color: white;
-}
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: #f44336; /* Red */
-  color: white;
-  margin-bottom: 15px;
-}
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
-}
-.footer{ 
-       position: fixed;     
-       text-align: Right;    
-       bottom: 0px; 
-       width: 100%;
-       font-size: 70px;
-   }  
-.icon-bar {
-  width: 100%;
-  background-color: rgba(0,0,0,0.75);
-  overflow: hidden;
-  position: fixed;
-   bottom: 0;
-}
-.icon-bar a {
-  float: left;
-  width: 20%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
- 
-}
-.icon-bar a:hover {
-  background-color: #000;
-}
-.active {
-  background-color: #4CAF50;
-}
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(https://raw.githubusercontent.com/net-os/net-os.github.io/master/Background.JPG) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-  </style>
-  <script>
-    function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  if (h > 12) {
-    h -= 12;
-} else if (h === 0) {
-   h = 12;
-}
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  var mo = today.getMonth() + 1;
-  var d = today.getDate();
-  var y = today.getYear() - 100;
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('clock').innerHTML =
- mo + "/" + d + "/" + y + "   " + "<b>" + h + ":" + m + "</b>";
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-  </script>  
+<link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   </head>
 <body onload="startTime()">
+  <script src="java.js"></script>
 
 <div class="topnav">
 <img src='https://net-os.github.io/net.svg' alt='Image' width="40" height="40">
@@ -149,18 +19,7 @@ function checkTime(i) {
   right: 0;" href="#name">0/0/0   <b>00:00</b></a>
 </div>
 
-  <script>
-function myFunction() {
-  var txt;
-  var person = prompt("Please enter your name:", "Harry Potter");
-  if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-  } else {
-    txt = "<i class='fas fa-user'>   " + "" + person + "";
-  }
-  document.getElementById("user").innerHTML = txt;
-}
-</script>
+
   
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
