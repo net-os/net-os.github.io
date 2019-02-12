@@ -10,9 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   </head>
-<body onload="startTime()">
+<body onload="startTime()" onload="loader()">
   <script src="java.js"></script>
-
+<div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    
 <div class="topnav">
 <img src='https://net-os.github.io/net.svg' alt='Image' width="40" height="40">
   <a id="clock" style="position: absolute;
@@ -31,5 +33,6 @@
   <a><i class="fas fa-trash-alt"></i></a> 
 </div>
   
+    </div>
 </body>
 </html>
