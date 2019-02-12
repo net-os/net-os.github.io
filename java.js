@@ -43,3 +43,16 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+
+function games() {
+window.open('http://ultimate-games.github.io', '_blank');  }
+
+function notepad() {
+window.open('https://ultimate-games.github.io/experiments/notepad/', '_blank');  }
+
+function web() {
+window.open('https://www.google.com/_/chrome/newtab', '_blank');  }
+
+function mail() {
+window.open('https://mail.google.com/mail/u/0/', '_blank');  }
