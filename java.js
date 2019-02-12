@@ -14,7 +14,7 @@
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('clock').innerHTML =
-"<i class='fas fa-wifi'></i> <i class='fas fa-battery-full'></i>" + mo + "/" + d + "/" + y + "   " + "<b>" + h + ":" + m + "</b>";
+"<i class='fas fa-wifi'></i>      <i class='fas fa-battery-full'></i>     " + mo + "/" + d + "/" + y + "   " + "<b>" + h + ":" + m + "</b>";
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
