@@ -61,5 +61,5 @@ window.open('https://github.com/net-os/net-os.github.io/', '_blank');  }
 
 function ipad() {
   var link = prompt("Enter a link", "https://");
- window.open( link , '_blank');  }
+ window.open( link , '_blank');
 }
