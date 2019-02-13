@@ -60,4 +60,5 @@ function logo() {
 window.open('https://github.com/net-os/net-os.github.io/', '_blank');  }
 
 function ipad() {
-window.open('https://appetize.io/embed/yfbb8xbfd7vhz8jvnkbzhr1cpw?device=ipadair&scale=65&orientation=landscape&xdocMsg=true&params=%7B%22device_id%22:%22cd03dbdbf4d834e7286e%22%7D&osVersion=11.4', '_blank');  }
+  var link = prompt("Enter a link", "https://");
+window.open( link , '_blank');  }
