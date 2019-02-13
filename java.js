@@ -58,3 +58,6 @@ window.open('https://mail.google.com/mail/u/0/', '_blank');  }
 
 function github() {
 window.open('https://ultimate-games.github.io/splitscreen/', '_blank');  }
+
+function logo() {
+window.open('https://github.com/net-os/net-os.github.io/', '_blank');  }
