@@ -26,16 +26,12 @@
   font-size: 19px;
 }
 .topnav a:hover {
-  background-color: #fff;
-  color: black;
+  background-color: #000;
 }
   .topnav img:hover {
-  background-color: #fff;
+  background-color: #000;
 }
-#netos:hover {
-  -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
-  filter: invert(100%);
-}
+
 .topnav a.active {
   background-color: #ff1919;
   color: white;
