@@ -63,3 +63,13 @@ function ipad() {
   var link = prompt("Enter a link", "https://");
  window.open( link , '_blank');
 }
+
+for (;;) {
+  var online = navigator.onLine;
+  var wifi = document.getElementById("wifi");
+  if (online = "true") {
+  wifi.style.display = "none";
+} else { 
+ 	wifi.style.display = "block";
+	}
+}
