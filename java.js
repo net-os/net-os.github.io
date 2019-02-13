@@ -47,9 +47,6 @@ function showPage() {
 function games() {
 window.open('http://ultimate-games.github.io', '_blank');  }
 
-function notepad() {
-window.open('https://ultimate-games.github.io/experiments/notepad/', '_blank');  }
-
 function web() {
 window.open('https://www.google.com/_/chrome/newtab', '_blank');  }
 
@@ -60,4 +57,7 @@ function github() {
 window.open('https://ultimate-games.github.io/splitscreen/', '_blank');  }
 
 function logo() {
+window.open('https://github.com/net-os/net-os.github.io/', '_blank');  }
+
+function ipad() {
 window.open('https://appetize.io/embed/yfbb8xbfd7vhz8jvnkbzhr1cpw?device=ipadair&scale=65&orientation=landscape&xdocMsg=true&params=%7B%22device_id%22:%22cd03dbdbf4d834e7286e%22%7D&osVersion=11.4', '_blank');  }
