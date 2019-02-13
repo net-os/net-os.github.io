@@ -67,7 +67,7 @@ function ipad() {
 for (;;) {
   var online = navigator.onLine;
   var wifi = document.getElementById("wifi");
-  if (online = "true") {
+  if (online || "true") {
   wifi.style.display = "none";
 } else { 
  	wifi.style.display = "block";
