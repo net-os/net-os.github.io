@@ -28,6 +28,9 @@
 .topnav a:hover {
   background-color: #000;
 }
+.topnav a.right {
+  float: right;
+}
   .topnav img:hover {
   background-color: #000;
 }
