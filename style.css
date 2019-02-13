@@ -31,7 +31,6 @@
 }
   .topnav img:hover {
   background-color: #fff;
-  color: black;
 }
 #netos:hover {
   -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
