@@ -59,7 +59,7 @@ window.open('https://ultimate-games.github.io/splitscreen/', '_blank');  }
 function logo() {
 window.open('https://github.com/net-os/net-os.github.io/', '_blank');  }
 
-function ipad() {
+function link() {
   var link = prompt("Enter a link", "https://");
  window.open( link , '_blank');
 }
