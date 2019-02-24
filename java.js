@@ -73,6 +73,6 @@ for (;;) {
  	wifi.style.display = "block";
 	}
 }
-function myFunction() {
+function popup() {
 window.open('http://www.google.com','MyWindow',width=600,height=300); return false;
 
