@@ -19,12 +19,7 @@
 <img id="netos" onclick="logo()" src='https://net-os.github.io/net.svg' alt='Image' width="28" height="28">
   <a id="clock" onclick="wallpaperChange()" class="right">0/0/0   <b>00:00</b></a>
 </div>
-    <script>
-      function wallpaperChange() {
-        var wall = prompt("Please enter wallpaper url.", "https://");
-        document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
-      }
-    </script>
+    
 <style id="thestyle">
   body:before {
   content: "";
