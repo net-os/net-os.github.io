@@ -21,6 +21,7 @@
   <a class="dropbtn">Settings</a>
   <div class="dropdown-content">
     <a onclick="wallpaperChange()">Wallpaper</a>
+    <a onclick="javascript:(function(){var newSS, styles='* { background: white ! important; color: black !important } :link, :link * { color: #0000EE !important } :visited, :visited * { color: #551A8B !important }'; if(document.createStyleSheet) { document.createStyleSheet(%22javascript:'%22+styles+%22'%22); } else { newSS=document.createElement('link'); newSS.rel='stylesheet'; newSS.href='data:text/css,'+escape(styles); document.getElementsByTagName(%22head%22)[0].appendChild(newSS); } })();">Dark Mode</a>
   </div>
 </div>
   <a id="clock" class="right">0/0/0   <b>00:00</b></a>
