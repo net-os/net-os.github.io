@@ -52,7 +52,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,1);
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -65,7 +65,8 @@ body {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #fff;}
+.dropdown-content a:hover {color: black;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
