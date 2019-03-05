@@ -69,7 +69,7 @@ body {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: rgba(0,0,0,0);}
 /* The alert message box */
 .alert {
   padding: 20px;
