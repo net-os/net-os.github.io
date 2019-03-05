@@ -40,17 +40,14 @@
   color: white;
 }
 .dropbtn {
-  background-color: #f2f2f2;
+  background-color: rgba(0,0,0,0.0);
   color: white;
   padding: 10px;
   font-size: 15px;
   border: none;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+
 
 .dropdown-content {
   display: none;
