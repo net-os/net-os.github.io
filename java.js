@@ -112,3 +112,13 @@ window.onclick = function(event) {
     }
   }
 }
+
+function lightMode() {
+    document.getElementById("css").href = "/dark.css";
+    document.getElementById("netos").src = "/netdark.svg";
+}
+     
+ function darkMode() {
+    document.getElementById("css").href = "/style.css";
+    document.getElementById("netos").src = "/net.svg";
+}
