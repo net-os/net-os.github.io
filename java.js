@@ -147,3 +147,8 @@ function lightMode() {
     document.getElementById("netos").src = "/net.svg";
 	 localStorage.setItem("mode", "dark");
 }
+
+function reset() {
+	localStorage.clear();
+	location.reload();
+}
