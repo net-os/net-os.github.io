@@ -116,9 +116,11 @@ window.onclick = function(event) {
 function lightMode() {
     document.getElementById("css").href = "/dark.css";
     document.getElementById("netos").src = "/netdark.svg";
+    document.getElementById("mode").onclick = "darkMode()";
 }
      
  function darkMode() {
     document.getElementById("css").href = "/style.css";
     document.getElementById("netos").src = "/net.svg";
+    document.getElementById("mode").onclick = "lightMode()";
 }
