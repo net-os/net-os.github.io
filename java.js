@@ -97,7 +97,7 @@ var wall = localStorage.getItem("wallpaper");
 
 
 function wallpaperChange() {
-        var wall = prompt("Please enter wallpaper url.", "https://");
+        var wall = prompt("Please enter wallpaper url.", "https://net-os.github.io/wallpaper.jpg");
         document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
 	localStorage.setItem("wallpaper", wall);
       }
