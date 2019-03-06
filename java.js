@@ -123,13 +123,11 @@ window.onclick = function(event) {
 }
 
 function loadmode()  {
-var mode = localStorage.getItem("mode");
-        if (mode = "light") {
+if (localStorage.getItem("mode") === "light") {
   document.getElementById("css").href = "/dark.css";
     document.getElementById("netos").src = "/netdark.svg";
 } 
-	var mode = localStorage.getItem("mode");
-        if (mode = "dark") {
+if (localStorage.getItem("mode") === "dark") {
   document.getElementById("css").href = "/style.css";
     document.getElementById("netos").src = "/net.svg";
 } 
