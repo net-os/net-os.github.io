@@ -122,12 +122,21 @@ window.onclick = function(event) {
   }
 }
 
+function loadmode()  {
+var mode = localStorage.getItem("mode");
+        if (mode = "light") {
+  document.getElementById("css").href = "/dark.css";
+    document.getElementById("netos").src = "/netdark.svg";
+}}
+
 function lightMode() {
     document.getElementById("css").href = "/dark.css";
     document.getElementById("netos").src = "/netdark.svg";
+	localStorage.setItem("mode", "light");
 }
      
  function darkMode() {
     document.getElementById("css").href = "/style.css";
     document.getElementById("netos").src = "/net.svg";
+	 localStorage.setItem("mode", "dark");
 }
