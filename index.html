@@ -22,25 +22,20 @@
   <a class="dropbtn right">Settings</a>
   <div class="dropdown-content">
     <a class="right" onclick="wallpaperChange()">Wallpaper</a>
-    <a class="right" onclick="darkMode()">Dark Mode</a>
+    <a class="right" onclick="darkMode()">Dark Mode on</a>
+    <a class="right" onclick="lightMode()">Light Mode on</a>
   </div>
 </div>
 </div>
    <script>
-function darkMode() {
-  var css = document.getElementById("css").href
-  if (css = "/style.css") {
+function lightMode() {
     document.getElementById("css").href = "/dark.css";
-  } else {
-    document.getElementById("css").href = "/style.css";
-  }
- 
-  var logo = document.getElementById("netos").src
-  if (logo = "/net.svg") {
     document.getElementById("netos").netos = "/netdark.svg";
-  } else {
-    document.getElementById("netos").href = "/net.svg";
-  }
+}
+     
+     function darkMode() {
+    document.getElementById("css").href = "/style.css";
+    document.getElementById("netos").netos = "/net.svg";
 }
 </script>
 <style id="thestyle">
