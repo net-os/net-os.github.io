@@ -127,7 +127,10 @@ var mode = localStorage.getItem("mode");
         if (mode = "light") {
   document.getElementById("css").href = "/dark.css";
     document.getElementById("netos").src = "/netdark.svg";
-}}
+} else { 
+document.getElementById("css").href = "/style.css";
+    document.getElementById("netos").src = "/net.svg";
+}
 
 function lightMode() {
     document.getElementById("css").href = "/dark.css";
