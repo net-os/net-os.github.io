@@ -68,6 +68,7 @@ float: right
 
 .dropdown-content a:hover {background-color: #fff;}
 .dropdown-content a:hover {color: black;}
+.dropbtn a:hover {background-color: #fff;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
