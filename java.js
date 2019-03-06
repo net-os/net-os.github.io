@@ -53,8 +53,8 @@ window.open('https://www.google.com/_/chrome/newtab', '_blank');  }
 function mail() {
 window.open('https://mail.google.com/mail/u/0/', '_blank');  }
 
-function github() {
-window.open('https://brianbaldner.github.io/aomchat/', '_blank');  }
+function youtube() {
+window.open('https://www.youtube.com/', '_blank');  }
 
 function logo() {
 window.open('https://github.com/net-os/net-os.github.io/', '_blank');  }
