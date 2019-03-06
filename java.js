@@ -87,13 +87,10 @@ function openFullscreen() {
     elem.msRequestFullscreen();
   }
 }
-
-function boot()  {
+function loadwall()  {
 var wall = localStorage.getItem("wallpaper");
-	if (wall = str.includes("https://");) {
-  document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
+        document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
 }
-
 
 
 function wallpaperChange() {
@@ -125,11 +122,9 @@ window.onclick = function(event) {
 function lightMode() {
     document.getElementById("css").href = "/dark.css";
     document.getElementById("netos").src = "/netdark.svg";
-    localStorage.setItem("mode", "light");
 }
      
  function darkMode() {
     document.getElementById("css").href = "/style.css";
-    document.getElementById("netos").src = "/net.svg"; 
-    localStorage.setItem("mode", "dark");
+    document.getElementById("netos").src = "/net.svg";
 }
