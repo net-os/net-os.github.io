@@ -1,192 +1,205 @@
 body {
-  margin: 0;
-  font-family: Arial;
+	margin: 0;
+	font-family: Arial;
 }
 .topnav {
-  width: 100%;
-  background-color: rgba(0,0,0,0.75);
-  overflow: hidden;
-  position: fixed;
-   top: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.75);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
 }
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 15px;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 15px;
 }
-  .topnav img {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px 5px;
-  text-decoration: none;
-  font-size: 19px;
+.topnav img {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none;
+	font-size: 19px;
 }
 .topnav a:hover {
-  background-color: #000;
+	background-color: #000;
 }
 .topnav a.right {
-  float: right;
+	float: right;
 }
-  .topnav img:hover {
-  background-color: #000;
+.topnav img:hover {
+	background-color: #000;
 }
-
 .topnav a.active {
-  background-color: #ff1919;
-  color: white;
+	background-color: #ff1919;
+	color: white;
 }
 .dropbtn {
-  background-color: rgba(0,0,0,0.0);
-  color: white;
-  padding: 10px;
-  font-size: 15px;
-  border: none;
+	background-color: rgba(0,0,0,0.0);
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+	border: none;
 }
-
-
-
 .dropdown-content {
-  display: none;
-  background-color: rgba(0,0,0,0);
-  min-width: 100px;
-  z-index: 1;
-float: right;
+	display: none;
+	background-color: rgba(0,0,0,0);
+	min-width: 100px;
+	z-index: 1;
+	float: right;
 }
-
 .dropdown-content a {
-  color: white;
-  padding: 10px 10px;
-  text-decoration: none;
-  display: block;
-float: right
-	
+	color: white;
+	padding: 10px 10px;
+	text-decoration: none;
+	display: block;
+	float: right
 }
-
-.dropdown-content a:hover {background-color: #000;}
-.dropdown-content a:hover {color: white;}
-.dropbtn a:hover {background-color: #000;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: rgba(0,0,0,0);}
+.dropdown-content a:hover {
+	background-color: #000;
+}
+.dropdown-content a:hover {
+	color: white;
+}
+.dropbtn a:hover {
+	background-color: #000;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown:hover .dropbtn {
+	background-color: rgba(0,0,0,0);
+}
 /* The alert message box */
 .alert {
-  padding: 20px;
-  background-color: #f44336; /* Red */
-  color: white;
-  margin-bottom: 15px;
+	padding: 20px;
+	background-color: #f44336;
+	/* Red */
+	color: white;
+	margin-bottom: 15px;
 }
 /* The close button */
 .closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
 }
 /* When moving the mouse over the close button */
 .closebtn:hover {
-  color: black;
+	color: black;
 }
-.footer{ 
-	   position: fixed;	 
-	   text-align: Right;	
-	   bottom: 0px; 
-	   width: 100%;
-	   font-size: 70px;
-   }  
+.footer{
+	position: fixed;
+	text-align: Right;
+	bottom: 0px;
+	width: 100%;
+	font-size: 70px;
+}
 .icon-bar {
-  width: 100%;
-  background-color: rgba(0,0,0,0.75);
-  overflow: hidden;
-  position: fixed;
-   bottom: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.75);
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
 }
 .icon-bar a {
-  float: left;
-  width: 20%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
- 
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 36px;
 }
 .icon-bar a:hover {
-  background-color: #000;
+	background-color: #000;
 }
 .active {
-  background-color: #4CAF50;
+	background-color: #4CAF50;
 }
-
-
 /* Center the loader */
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
 }
 .loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid blue;
-  border-right: 16px solid green;
-  border-bottom: 16px solid red;
-  border-left: 16px solid yellow;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid blue;
+	border-right: 16px solid green;
+	border-bottom: 16px solid red;
+	border-left: 16px solid yellow;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
 }
-
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
 }
-
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
-
 /* Add animation to "page content" */
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
 }
-
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+	from {
+		bottom:-100px;
+		opacity:0 
 }
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+	to {
+		bottom:0px;
+		opacity:1 
 }
-
+}
+@keyframes animatebottom {
+	from{
+		bottom:-100px;
+		opacity:0 
+}
+	to{
+		bottom:0;
+		opacity:1 
+}
+}
 #myDiv {
-  display: none;
-  text-align: center;
+	display: none;
+	text-align: center;
 }
