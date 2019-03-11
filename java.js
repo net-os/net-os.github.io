@@ -37,7 +37,29 @@ function showPage() {
 }
 
 
+function games() {
+    window.open('http://ultimate-games.github.io', '_blank');
+}
 
+function web() {
+    window.open('https://www.google.com/_/chrome/newtab', '_blank');
+}
+
+function mail() {
+    window.open('https://mail.google.com/mail/u/0/', '_blank');
+}
+
+function youtube() {
+    window.open('https://www.youtube.com/', '_blank');
+}
+
+function logo() {
+    window.open('https://github.com/net-os/net-os.github.io/', '_blank');
+}
+
+function link() {
+    window.open('https://aoms.schoolloop.com/portal/student_home', '_blank');
+}
 
 for (;;) {
     var online = navigator.onLine;
