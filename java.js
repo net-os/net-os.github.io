@@ -42,7 +42,7 @@ function games() {
 }
 
 function web() {
-    window.open('https://www.google.com/_/chrome/newtab', '_blank');
+    window.open('https://www.google.com', '_blank');
 }
 
 function mail() {
