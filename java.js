@@ -93,6 +93,7 @@ if (localStorage.getItem("wallpaper") === null) {
 function loadwall() {
     if (localStorage.getItem("wallpaper") === null) {
         localStorage.setItem("wallpaper", "https://net-os.github.io/wallpaper.jpg");
+    }
         if (localStorage.getItem("approw") === null) {
             var approw = document.getElementById(approw).innerHTML;
         localStorage.setItem("approw", approw);
