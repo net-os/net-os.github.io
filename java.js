@@ -152,3 +152,10 @@ function reset() {
     localStorage.clear();
     location.reload();
 }
+function wallpaperChange() {
+    var numb = prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
+    var url = prompt("Enter the link you want the app to go to.");
+    var icon = prompt("Enter the link you want the app to go to.");
+    document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
+    localStorage.setItem("wallpaper", wall);
+}
