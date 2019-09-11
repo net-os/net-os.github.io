@@ -93,10 +93,15 @@ if (localStorage.getItem("wallpaper") === null) {
 function loadwall() {
     if (localStorage.getItem("wallpaper") === null) {
         localStorage.setItem("wallpaper", "https://net-os.github.io/wallpaper.jpg");
+        if (localStorage.getItem("approw") === null) {
+            var approw = document.getElementById(approw).innerHTML;
+        localStorage.setItem("approw", approw);
     }
+        var thething = localStorage.getItem("approw");
     var wall = localStorage.getItem("wallpaper");
     document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
-}
+ document.getElementById(approw).innerHTML = thething;
+    }
 
 
 function wallpaperChange() {
@@ -152,10 +157,11 @@ function reset() {
     localStorage.clear();
     location.reload();
 }
-function wallpaperChange() {
+function appchange() {
     var numb = prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
     var url = prompt("Enter the link you want the app to go to.");
-    var icon = prompt("Enter the link you want the app to go to.");
-    document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
-    localStorage.setItem("wallpaper", wall);
+    var icon = prompt("Enter the html of the icon from fontawesome.com/icons. CAN NOT BE A PRO ICON!");
+    document.getElementById(numb).innerHTML = "<a onclick="window.open('" + url + "', '_blank');>" + icon + "</a>";
+    var approw = document.getElementById(numb).innerHTML;
+    localStorage.setItem("approw", approw);
 }
