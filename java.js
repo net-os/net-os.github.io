@@ -157,7 +157,8 @@ function appchange() {
     var numb = prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
     var url = prompt("Enter the link you want the app to go to.");
     var icon = prompt("Enter the html of the icon from fontawesome.com/icons. CAN NOT BE A PRO ICON!");
-    document.getElementById(numb).innerHTML = "<a onclick='window.open('https://" + url + "', '_blank');'>" + icon + "</a>";
+    document.getElementById(numb).onclick = "window.open('" + url + "', '_blank');'>";
+    document.getElementById(numb).innerHTML = icon;
     var approw = document.getElementById(numb).innerHTML;
     localStorage.setItem("approw", approw);
 }
