@@ -169,6 +169,6 @@ function appchange() {
     var funct = "openApp('" + url + "')"
     var app = "<a onclick=\"openApp('" + url + "')\">" + icon + "</a>";
     document.getElementById(numb).innerHTML = app
-    var approw = document.getElementById(numb).innerHTML;
-    localStorage.setItem("approw", approw);
+    var approw = document.getElementById('apps').innerHTML;
+    localStorage.setItem("apps", approw);
 }
