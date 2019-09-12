@@ -158,9 +158,7 @@ function appchange() {
     var url = prompt("Enter the link you want the app to go to.");
     var icon = prompt("Enter the html of the icon from fontawesome.com/icons. CAN NOT BE A PRO ICON!");
     if(url){
-    document.getElementById(numb).onclick=function(){
-    window.open(url, '_blank');
-  }
+    document.getElementById(numb).onclick= "function(){ window.open(url, '_blank');}"
 }
     document.getElementById(numb).innerHTML = icon;
     var approw = document.getElementById(numb).innerHTML;
