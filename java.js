@@ -93,10 +93,15 @@ if (localStorage.getItem("wallpaper") === null) {
 function loadwall() {
     if (localStorage.getItem("wallpaper") === null) {
         localStorage.setItem("wallpaper", "https://net-os.github.io/wallpaper.jpg");
+        if (localStorage.getItem("approw") === null) {
+            var approw = document.getElementById(approw).innerHTML;
+        localStorage.setItem("approw", approw);
     }
-    
+        var thething = localStorage.getItem("approw");
     var wall = localStorage.getItem("wallpaper");
     document.getElementById("thestyle").innerHTML = "body:before {   content: '';  display: block;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: url(" + wall + ") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }";
+}
+ document.getElementById(approw).innerHTML = thething;
     }
 
 
