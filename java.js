@@ -158,8 +158,7 @@ function appchange() {
     var url = prompt("Enter the link you want the app to go to.");
     var icon = prompt("Enter the html of the icon from fontawesome.com/icons. CAN NOT BE A PRO ICON!");
     var funct = "openApp('" + url + "')"
-    document.getElementById(numb).onclick = funct
-    document.getElementById(numb).innerHTML = icon;
+    document.getElementById(numb).innerHTML = "<a onclick='" + funct + ">" + icon + "</a>" ;
     var approw = document.getElementById(numb).innerHTML;
     localStorage.setItem("approw", approw);
 }
