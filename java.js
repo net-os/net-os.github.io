@@ -138,23 +138,23 @@ window.onclick = function(event) {
 function loadmode() {
     if (localStorage.getItem("mode") === "light") {
         document.getElementById("css").href = "/dark.css";
-        document.getElementById("netos").src = "/uglogo.svg";
+        document.getElementById("netos").src = "/netdark.svg";
     }
     if (localStorage.getItem("mode") === "dark") {
         document.getElementById("css").href = "/style.css";
-        document.getElementById("netos").src = "/uglight.svg";
+        document.getElementById("netos").src = "/net.svg";
     }
 }
 
 function lightMode() {
     document.getElementById("css").href = "/dark.css";
-    document.getElementById("netos").src = "/uglogo.svg";
+    document.getElementById("netos").src = "/netdark.svg";
     localStorage.setItem("mode", "light");
 }
 
 function darkMode() {
     document.getElementById("css").href = "/style.css";
-    document.getElementById("netos").src = "/uglight.svg";
+    document.getElementById("netos").src = "/net.svg";
     localStorage.setItem("mode", "dark");
 }
 
