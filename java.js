@@ -148,13 +148,13 @@ function loadmode() {
 
 function lightMode() {
     document.getElementById("css").href = "/dark.css";
-    document.getElementById("netos").src = "/netdark.svg";
+    document.getElementById("netos").src = "/uglogo.svg";
     localStorage.setItem("mode", "light");
 }
 
 function darkMode() {
     document.getElementById("css").href = "/style.css";
-    document.getElementById("netos").src = "/net.svg";
+    document.getElementById("netos").src = "/uglight.svg";
     localStorage.setItem("mode", "dark");
 }
 
