@@ -164,9 +164,9 @@ function reset() {
 }
 function appchange() {
     var numb = alertify.prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
-    var url = alertify.prompt("Enter the link you want the app to go to.");
-    var icon = alertify.prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!");
-    var funct = "openApp('" + url + "')"
+    if( numb ){var url = alertify.prompt("Enter the link you want the app to go to.");}
+    if( url ){var icon = alertify.prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!");}
+    if( icon ){var funct = "openApp('" + url + "')"}
     var app = "<a onclick=\"openApp('" + url + "')\">" + icon + "</a>";
     document.getElementById(numb).innerHTML = app
     var approw = document.getElementById('apps').innerHTML;
