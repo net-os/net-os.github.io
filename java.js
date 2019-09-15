@@ -19,8 +19,8 @@ function startTime() {
 
 function checkTime(i) {
     if (i < 10) {
-        i = "0" + i;
-    } // add zero in front of numbers < 10
+        i = "0" + i
+    }; // add zero in front of numbers < 10
     return i;
 }
 
@@ -133,7 +133,7 @@ window.onclick = function(event) {
             }
         }
     }
-};
+}
 
 function loadmode() {
     if (localStorage.getItem("mode") === "light") {
@@ -163,18 +163,9 @@ function reset() {
     location.reload();
 }
 function appchange() {
-    var numb = await Swal.fire({
-  input: 'text',
-  title: 'Enter the number of the app you want to  change. From left to right, 1-5.'
-});
-    var url = await Swal.fire({
-  input: 'text',
-  title: 'Enter the link you want the app to go to.'
-});
-    var icon = await Swal.fire({
-  input: 'text',
-  title: 'Enter the html of the icon from fontawesome.com/icons or you can use letters. CAN NOT BE A PRO ICON!'
-});
+    var numb = prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
+    var url = prompt("Enter the link you want the app to go to.");
+    var icon = prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!");
     var funct = "openApp('" + url + "')"
     var app = "<a onclick=\"openApp('" + url + "')\">" + icon + "</a>";
     document.getElementById(numb).innerHTML = app
