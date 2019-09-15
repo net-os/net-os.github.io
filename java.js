@@ -163,15 +163,13 @@ function reset() {
     location.reload();
 }
 function appchange() {
-   alertify.prompt("Enter the number of the app you want to  change. From left to right, 1-5.", ' '
-               , function(evt, numb) { alertify.prompt("Enter the link you want the app to go to.", 'https://'
-               , function(evt, url) { alertify.prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!", ' '
-               , function(evt, icon) { var funct = "openApp('" + url + "')"
+alertify.prompt("Enter the number of the app you want to  change. From left to right, 1-5.", 'Prompt Value'
+               , function(evt, numb) {  });
+    var url = prompt("Enter the link you want the app to go to.");
+    var icon = prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!");
+    var funct = "openApp('" + url + "')"
     var app = "<a onclick=\"openApp('" + url + "')\">" + icon + "</a>";
     document.getElementById(numb).innerHTML = app
     var approw = document.getElementById('apps').innerHTML;
-    localStorage.setItem("apps", approw); });  }); });
-    
-    
-    
+    localStorage.setItem("apps", approw);
 }
