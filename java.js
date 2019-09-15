@@ -19,8 +19,8 @@ function startTime() {
 
 function checkTime(i) {
     if (i < 10) {
-        i = "0" + i
-    }; // add zero in front of numbers < 10
+        i = "0" + i;
+    } // add zero in front of numbers < 10
     return i;
 }
 
@@ -133,7 +133,7 @@ window.onclick = function(event) {
             }
         }
     }
-}
+};
 
 function loadmode() {
     if (localStorage.getItem("mode") === "light") {
@@ -163,15 +163,15 @@ function reset() {
     location.reload();
 }
 function appchange() {
-    const { value: numb } = await Swal.fire({
+    var numb = await Swal.fire({
   input: 'text',
   title: 'Enter the number of the app you want to  change. From left to right, 1-5.'
 });
-    const { value: url } = await Swal.fire({
+    var url = await Swal.fire({
   input: 'text',
   title: 'Enter the link you want the app to go to.'
 });
-    const { value: icon } = await Swal.fire({
+    var icon = await Swal.fire({
   input: 'text',
   title: 'Enter the html of the icon from fontawesome.com/icons or you can use letters. CAN NOT BE A PRO ICON!'
 });
