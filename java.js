@@ -163,7 +163,12 @@ function reset() {
     location.reload();
 }
 function appchange() {
-    var numb = prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
+    var numb = await Swal.fire({
+  title: 'Enter the number of the app you want to change. From left to right, 1-5.',
+  input: 'text',
+  inputValue: inputValue,
+  showCancelButton: true,
+})
     var url = prompt("Enter the link you want the app to go to.");
     var icon = prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!");
     var funct = "openApp('" + url + "')"
