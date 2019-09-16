@@ -163,9 +163,24 @@ function reset() {
     location.reload();
 }
 function appchange() {
-    var numb = prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
-    var url = prompt("Enter the link you want the app to go to.");
-    var icon = prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!");
+alertify.prompt("Enter the number of the app you want to  change. From left to right, 1-5.", ' '
+               , function(evt, a) { numb = a;
+                                  linkURL();
+                                  });
+}
+function linkURL() {
+    alertify.prompt("Enter the link you want the app to go to.", 'https://'
+               , function(evt, b) { url = b;
+                                  iconHTML(); 
+                                  });
+}
+function iconHTML() {
+    alertify.prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!", ' '
+               , function(evt, c) { icon = c;
+                                  finish(); 
+                                  });
+}
+function finish() {
     var funct = "openApp('" + url + "')"
     var app = "<a onclick=\"openApp('" + url + "')\">" + icon + "</a>";
     document.getElementById(numb).innerHTML = app
