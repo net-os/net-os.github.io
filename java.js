@@ -163,22 +163,34 @@ function reset() {
     location.reload();
 }
 function appchange() {
-alertify.prompt("Enter the number of the app you want to  change. From left to right, 1-5.", ' '
-               , function(evt, a) { numb = a;
-                                  linkURL();
-                                  });
+    const { value: numb } = await Swal.fire({
+  title: 'Enter the number of the app you want to  change. From left to right, 1-5.',
+  input: 'text',
+})
+
+if (numb) {
+    linkURL();
+}
 }
 function linkURL() {
-    alertify.prompt("Enter the link you want the app to go to.", 'https://'
-               , function(evt, b) { url = b;
-                                  iconHTML(); 
-                                  });
+    const { value: url } = await Swal.fire({
+  title: 'Enter the link you want the app to go to.',
+  input: 'url',
+})
+
+if (url) {
+    iconHTML();
+}
 }
 function iconHTML() {
-    alertify.prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!", ' '
-               , function(evt, c) { icon = c;
-                                  finish(); 
-                                  });
+        const { value: icon } = await Swal.fire({
+  title: 'Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!',
+  input: 'url',
+})
+
+if (c) {
+    finish();
+}
 }
 function finish() {
     var funct = "openApp('" + url + "')"
