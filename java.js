@@ -163,36 +163,9 @@ function reset() {
     location.reload();
 }
 function appchange() {
-    const { value: numb } = await Swal.fire({
-  title: 'Enter the number of the app you want to  change. From left to right, 1-5.',
-  input: 'text',
-})
-
-if (numb) {
-    linkURL();
-}
-}
-function linkURL() {
-    const { value: url } = await Swal.fire({
-  title: 'Enter the link you want the app to go to.',
-  input: 'url',
-})
-
-if (url) {
-    iconHTML();
-}
-}
-function iconHTML() {
-        const { value: icon } = await Swal.fire({
-  title: 'Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!',
-  input: 'url',
-})
-
-if (c) {
-    finish();
-}
-}
-function finish() {
+    var numb = prompt("Enter the number of the app you want to  change. From left to right, 1-5.");
+    var url = prompt("Enter the link you want the app to go to.");
+    var icon = prompt("Enter the html of the icon from fontawesome.com/icons or you can use a capitol letter. CAN NOT BE A PRO ICON!");
     var funct = "openApp('" + url + "')"
     var app = "<a onclick=\"openApp('" + url + "')\">" + icon + "</a>";
     document.getElementById(numb).innerHTML = app
