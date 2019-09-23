@@ -54,7 +54,7 @@ function youtube() {
 }
 
 function logo() {
-    window.open('https://github.com/net-os/net-os.github.io/', '_blank');
+    window.open('https://ugcorp.freshstatus.io/', '_blank');
 }
 
 function link() {
