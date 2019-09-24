@@ -31,9 +31,7 @@ body {
 .topnav a.right {
 	float: right;
 }
-.topnav img:hover {
-	background-color: #000;
-}
+
 .topnav a.active {
 	background-color: #ff1919;
 	color: white;
