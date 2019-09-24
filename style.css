@@ -2,9 +2,6 @@ body {
 	margin: 0;
 	font-family: Arial;
 }
-.logo {
-  vertical-align: middle;
-}
 .topnav {
 	width: 100%;
 	background-color: rgba(0,0,0,0.75);
@@ -23,7 +20,7 @@ body {
 .topnav img {
 	float: left;
 	color: #f2f2f2;
-	text-align: left;
+	text-align: center;
 	padding: 5px 5px;
 	text-decoration: none;
 	font-size: 19px;
