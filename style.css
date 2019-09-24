@@ -3,8 +3,7 @@ body {
 	font-family: Arial;
 }
 .logo {
-  top:50%; /* Move the image down, so its top is half way down the container */
-    margin-top:-100px; /* Move the image back up half its height */
+  vertical-align: middle;
 }
 .topnav {
 	width: 100%;
