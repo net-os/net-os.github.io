@@ -29,9 +29,7 @@ body {
 .topnav a.right {
 	float: right;
 }
-.topnav img:hover {
-	background-color: #fff;
-}
+
 .topnav a.active {
 	background-color: #ff1919;
 	color: white;
