@@ -13,7 +13,7 @@ body {
 	width: 100%;
 	background-color: rgba(0,0,0,0.75);
 	overflow: hidden;
-	position: fixed;
+	position: relative;
 	top: 0;
 }
 .topnav a {
