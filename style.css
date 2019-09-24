@@ -2,9 +2,12 @@ body {
 	margin: 0;
 	font-family: Arial;
 }
-.topnav > .logo {
-    display: table-cell;
-    vertical-align: middle;
+.logo {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .topnav {
 	width: 100%;
