@@ -87,12 +87,12 @@ function openFullscreen() {
     }
 }
 if (localStorage.getItem("wallpaper") === null) {
-    localStorage.setItem("wallpaper", "https://net-os.github.io/wallpaper.jpg");
+    localStorage.setItem("wallpaper", "https://net-os.github.io/ugwallpaper.png");
 }
 
 function loadwall() {
     if (localStorage.getItem("wallpaper") === null) {
-        localStorage.setItem("wallpaper", "https://net-os.github.io/wallpaper.jpg");
+        localStorage.setItem("wallpaper", "https://net-os.github.io/ugwallpaper.png");
     }
     
     var wall = localStorage.getItem("wallpaper");
